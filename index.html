@@ -101,7 +101,7 @@ margin: 2em;
     <div class="cell" onclick="makeMove(2, 2)" id="cell-8"></div>
   </div></div>
   <div style="padding: 2em;"><div class="result" id="result"></div>
-  <button class="again-btn" onclick="resetGame()">Play Again</button></div>
+  <button class="again-btn" onclick="resetGame()">Chơi lại</button></div>
   </div>
 
   <script>function getBestMove(board, player) {
@@ -272,11 +272,11 @@ function evaluateBoard(board, depth) {
     }
 
     if (winner === 'O') {
-      resultDiv.innerText = 'You win!';
+      resultDiv.innerText = 'Bạn thắng!';
     } else if (winner === 'X') {
-      resultDiv.innerText = 'Computer wins!';
+      resultDiv.innerText = 'Máy thắng!';
     } else {
-      resultDiv.innerText = "It's a draw!";
+      resultDiv.innerText = "Hòa!";
     }
   }
 
@@ -294,7 +294,3 @@ function evaluateBoard(board, depth) {
     gameOver = false;
   }
 </script>
-
-
-
-</div> </div> <aside class="sidebar-second"></aside>  <a id="reconnecting" class="link text" data-icon="p">Reconnecting</a>  <script src="/static/pychess-variants.js.br?v=f0f365b3dcace1477d648d9f893db16a1ceea7fd"></script> </div></body></html>
